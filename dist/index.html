@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - alphacamp 2-2 A11</title>
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <!-- main background image -->
+  <div class="overflow-hidden" id="background-image">
+    <span class="slogan">Challanguage</span>
+    <span class="slogan-description">尋找屬於你的語言交換夥伴</span>
+  </div>
+
+  <!-- nav bar -->
+  <nav class="shadow-lg navbar-expand navbar-dark bg-dark container-fluid">
+    <div class="row">
+      <a class="navbar-brand m-2" href="#">User List</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Favorite</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- button group for language and search bar -->
+  <div class="container-fluid" id="search-section">
+    <div class="search-group row justify-content-between">
+      <div class="btn-group m-3" id="language-list" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" id="language-all">All</button>
+        <button type="button" class="btn btn-secondary" id="language-deutsch">Deutsch</button>
+        <button type="button" class="btn btn-secondary" id="language-english">English</button>
+        <button type="button" class="btn btn-secondary" id="language-others">Others</button>
+      </div>
+      <div class="search-part m-3">
+        <form class="form-inline my-2 my-lg-0" id="search-user">
+          <input class="form-control mr-sm-2" type="search" placeholder="Name" aria-label="Search" id="search-input">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-button">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- user list -->
+  <div class="container-fluid mt-4">
+    <div class="card-deck row" id="user-list">
+      <!-- render user card -->
+    </div>
+  </div>
+
+  <!-- pagination -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center" id="user-paginator">
+     <!-- render paginator -->
+    </ul>
+  </nav>
+
+  <!-- modal -->
+  <div class="modal" tabindex="-1" id="description-modal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- render modal -->
+  </div>
+
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
